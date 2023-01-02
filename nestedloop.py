@@ -25,14 +25,19 @@ for item in shopping_list:
     print(item)
 print('---' * 30)
 
-item_to_be_found = "spam"
-found_at = None
+item_to_be_found = "albastross"
+found_at = None  # None is a constant means nothing. When this line executes
+# the variable exists but does not have a value
 for index in range(len(shopping_list)):
     if shopping_list[index] == item_to_be_found:
         found_at = index
         break  # terminates the loop after found the item in the list
-print(found_at)
-print('---'*30)
+if found_at is not None:
+    print(found_at)
+else:
+    print(" Item not found")
+print('---' * 30)
 
-#if item is not present in the list
-
+# if item is not present in the list it will return value None because of line 29 , i
+# f we hadn't initialized found_at then if the item was not present in the list then it would
+# provide an error but if the item present then it will return value of index of the item found

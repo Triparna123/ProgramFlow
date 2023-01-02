@@ -20,7 +20,12 @@ for i in range(0, 11,2):  # range iterator gives range of number
     # from the starting value upto but including end value
     # no start value defaults to 0, if step value added then start value must
     print(i)
+
 print("-" * 30)
+
+i=0
+
+
 for i in range(10,0,-2): # backwards swap start and end value
     print(i)
 print("-" * 30)
